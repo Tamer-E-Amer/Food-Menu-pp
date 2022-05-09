@@ -1,22 +1,16 @@
 # FAQ React Application
 
-This is a small React Priject For adding FAQ (Famous Asked Questions)
+This is a small React Project For for showing food list items and filter or search them
 
 ## About the Project
 
-**FAQ App** This application aims to apply set of React concepts. FAQ has a form with two inputs, one is to add a question and the other to add the answer. when the question submitted it appears in an accordion under the form
-
-**FAQ App** has delete functionality weather for all questions or for certain question. when there are no questions then a message under the form sppears and saying there is no more questions.
-
-- There is a form validation: the two inputs should not be empty when submitted
-- After submitting or deleting any question a snackbar appears saying that the operation is ok.
+**Food Menu App** The purpose of this application is to show a set of food list items and then filter them according to certain category. we can serach alsofor certain meal using its name
 
 ## What are applied in this project
 
-- React hooks such as useState and useEffect
-- React material UI for design the project
-- Storing and rerieving Questions from Local Storage
-- Form validation.
+- Mapping Through an array of items and show them in a grid of cards
+- Applying filters in the menu list according to certain category
+- Search for the category
 
 ## Technology used
 
@@ -24,4 +18,4 @@ This is a small React Priject For adding FAQ (Famous Asked Questions)
 - Material UI
 
 **the sketch of this project is made by Adobe XD** and it is publised on **Behance**:
-[Behance](https://www.behance.net/gallery/143238959/FAQ-App)
+[Behance](https://www.behance.net/gallery/143377721/Food-Menu-Items-App?)
