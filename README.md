@@ -1,4 +1,4 @@
-# FAQ React Application
+# Food Menu App
 
 This is a small React Project For for showing food list items and filter or search them
 
