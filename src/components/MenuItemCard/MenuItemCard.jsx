@@ -13,13 +13,16 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import meat1 from "../../imgs/meat1.png";
-const MenuItemCard = () => {
+const MenuItemCard = ({ menuItem }) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: "secondary" }} aria-label="recipe">
-            R
+          <Avatar
+            sx={{ bgcolor: "secondary", fontSize: 12, fontWeight: 500 }}
+            aria-label="recipe"
+          >
+            {menuItem.price} &#163;
           </Avatar>
         }
         action={
@@ -27,10 +30,15 @@ const MenuItemCard = () => {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title={menuItem.mealTitle}
+        subheader={menuItem.kitchenType}
       />
-      <CardMedia component="img" height="194" image={meat1} alt="meat 1" />
+      <CardMedia
+        component="img"
+        height="194"
+        image={`${menuItem.img}`}
+        alt={`${menuItem.img}`}
+      />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           This impressive paella is a perfect party dish and a fun meal to cook
