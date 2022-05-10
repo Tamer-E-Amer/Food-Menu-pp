@@ -13,7 +13,7 @@ const menuDataArray = [
     img:  meat3,
     description:
       "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
-    price: 150,
+    price: 120,
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const menuDataArray = [
     img: meat2 ,
     description:
       "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
-    price: 150,
+    price: 80,
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const menuDataArray = [
     img: meat1,
     description:
       "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
-    price: 150,
+    price: 120,
   },
   {
     id: 4,
