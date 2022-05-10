@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import DinnerDiningIcon from "@mui/icons-material/DinnerDining";
 import SearchIcon from "@mui/icons-material/Search";
-const Navbar = () => {
+const Navbar = ({ searchMenu }) => {
   const Search = styled("div")(({ theme }) => ({
     position: "relative",
     borderRadius: theme.shape.borderRadius,
@@ -53,6 +53,13 @@ const Navbar = () => {
     },
   }));
 
+  // state form the search
+  const [searchText, setSearchText] = React.useState("");
+
+  // search meal function
+  const searchMeal = (text) => {
+    searchMenu(text);
+  };
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" elevation={0}>
@@ -79,10 +86,22 @@ const Navbar = () => {
               <SearchIconWrapper>
                 <SearchIcon />
               </SearchIconWrapper>
-              <StyledInputBase
-                placeholder="Search…"
-                inputProps={{ "aria-label": "search" }}
-              />
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  searchMeal(searchText);
+                }}
+              >
+                <StyledInputBase
+                  placeholder="Search…"
+                  inputProps={{ "aria-label": "search" }}
+                  name="searchText"
+                  value={searchText}
+                  onChange={(e) => {
+                    setSearchText(e.target.value);
+                  }}
+                />
+              </form>
             </Search>
           </Toolbar>
         </Container>
