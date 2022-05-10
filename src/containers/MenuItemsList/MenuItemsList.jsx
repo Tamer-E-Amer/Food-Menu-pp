@@ -7,15 +7,19 @@ import { MenuItemCard } from "../../components";
 // mui components
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
+// react reveal
+import { Zoom } from "react-awesome-reveal";
 const MenuItemsList = ({ menuData }) => {
   console.log(menuData);
   // mapping through menuData
   const meals = menuData.map((item) => {
     return (
       <Grid item key={item.id} xs={12} sm={6} md={4} alignItems="center">
-        <Stack alignItems="center" justifyContent="center">
-          <MenuItemCard menuItem={item} />
-        </Stack>
+        <Zoom>
+          <Stack alignItems="center" justifyContent="center">
+            <MenuItemCard menuItem={item} />
+          </Stack>
+        </Zoom>
       </Grid>
     );
   });
