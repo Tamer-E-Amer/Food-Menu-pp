@@ -3,3 +3,4 @@
  */
 export {default as Navbar} from './Navbar/Navbar'
 export {default as FilterButtons} from './FilterButtons/FilterButtons'
+export {default as MenuItemCard} from './MenuItemCard/MenuItemCard'
