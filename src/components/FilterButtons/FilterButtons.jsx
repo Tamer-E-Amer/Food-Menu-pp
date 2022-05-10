@@ -18,7 +18,8 @@ const FilterButtons = ({ filterMeuByCategory, allCategories }) => {
    */
   const categoriesButtons = allCategories.map((category, index) => (
     <Button
-      variant="contained"
+      // make the first button is contained and the other is outlined
+      variant={index === 0 ? "contained" : "outlined"}
       size="large"
       sx={{
         maxWidth: "120px",
